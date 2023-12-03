@@ -27,9 +27,15 @@
     <ClInclude Include="src\HoneyDew\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\HoneyDew\HnyLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\HoneyDew\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HoneyDew\HnyLog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

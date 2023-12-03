@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\HoneyDew\HnyLog.h" />
     <ClInclude Include="src\HoneyDew\EntryPoint.h" />
     <ClInclude Include="src\Honey.h" />
     <ClInclude Include="src\HoneyDew\Application.h" />
     <ClInclude Include="src\HoneyDew\Core.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\HoneyDew\HnyLog.cpp" />
     <ClCompile Include="src\HoneyDew\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -64,9 +66,10 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);HNY_PLATFORM_WINDOWS;HNY_BLD_DLL</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HNY_PLATFORM_WINDOWS;HNY_BLD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)HoneyDew\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -79,9 +82,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);HNY_PLATFORM_WINDOWS;HNY_BLD_DLL</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HNY_PLATFORM_WINDOWS;HNY_BLD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)HoneyDew\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

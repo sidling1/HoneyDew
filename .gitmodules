@@ -1,0 +1,3 @@
+[submodule "HoneyDew/vendor/spdlog"]
+	path = HoneyDew/vendor/spdlog
+	url = https://github.com/gabime/spdlog
